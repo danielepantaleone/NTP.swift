@@ -49,7 +49,7 @@ pod 'NTP', '~> 1.2.1'
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/danielepantaleone/NTP.swift.git", .upToNextMajor(from: "1.2.0"))
+    .package(url: "https://github.com/danielepantaleone/NTP.swift.git", .upToNextMajor(from: "1.2.1"))
 ]
 ```
 
