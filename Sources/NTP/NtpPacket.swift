@@ -76,7 +76,7 @@ struct NtpPacket: Sendable {
             referenceTime: referenceTime.byteSwapped,
             originateTime: originateTime.byteSwapped,
             transmitTime: transmitTime.byteSwapped,
-            receiveTime: transmitTime.byteSwapped)
+            receiveTime: receiveTime.byteSwapped)
     }
     
     /// Returns the `NtpPacket` in the system's native byte order.
