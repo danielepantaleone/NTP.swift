@@ -3,9 +3,7 @@ Release Notes
 
 ## 1.2.1
 
-TBD
-
-- 
+- Fix NtpPacket byteSwapped to correctly swap receiveTime
 
 ## 1.2.0
 
