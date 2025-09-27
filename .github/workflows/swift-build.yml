@@ -19,12 +19,17 @@ on:
     types: [opened, reopened]
   workflow_dispatch:
 jobs:
-  tests:
+  build:
     name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest]
-        swift: ["5.10", "6.0"]
+        include:
+          - os: macos-14
+            swift: "5.10"
+          - os: macos-15
+            swift: "6.0"
+          - os: macos-15
+            swift: "6.1"
     runs-on: ${{ matrix.os }}
     steps:
       - name: Setup swift version ${{ matrix.swift }}
